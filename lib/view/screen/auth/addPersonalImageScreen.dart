@@ -6,7 +6,7 @@ import 'package:taskflutter/core/constant/color.dart';
 import 'package:taskflutter/core/constant/imgaeasset.dart';
 
 import '../../../controller/auth/addPersonalImageController.dart';
-import '../../widget/customMaterialButton.dart';
+import '../../widget/home/customMaterialButton.dart';
 
 class AddPersonalImageScreen extends StatelessWidget {
   const AddPersonalImageScreen({super.key});

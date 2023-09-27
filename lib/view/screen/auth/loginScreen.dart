@@ -6,10 +6,11 @@ import 'package:taskflutter/core/constant/imgaeasset.dart';
 import 'package:taskflutter/view/screen/auth/signupScreen.dart';
 import '../../../controller/auth/loginController.dart';
 import '../../../core/functions/validinput.dart';
-import '../../widget/RowForTowTextAndOnTap.dart';
+import '../../widget/auth/RowForTowTextAndOnTap.dart';
 import '../../widget/auth/customTextField.dart';
-import '../../widget/customMaterialButton.dart';
 import 'package:show_up_animation/show_up_animation.dart';
+
+import '../../widget/home/customMaterialButton.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

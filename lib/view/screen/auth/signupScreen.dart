@@ -4,13 +4,15 @@ import 'package:sizer/sizer.dart';
 import 'package:taskflutter/controller/auth/signupController.dart';
 import 'package:taskflutter/core/constant/imgaeasset.dart';
 import 'package:taskflutter/view/screen/auth/loginScreen.dart';
-import 'package:taskflutter/view/widget/conditionText.dart';
 import '../../../core/functions/validinput.dart';
-import '../../widget/RowForTowTextAndOnTap.dart';
+import '../../widget/auth/RowForTowTextAndOnTap.dart';
+import '../../widget/auth/conditionText.dart';
+import '../../widget/auth/customButtonToBack.dart';
 import '../../widget/auth/customTextField.dart';
-import '../../widget/customButtonToBack.dart';
-import '../../widget/customMaterialButton.dart';
+
 import 'package:show_up_animation/show_up_animation.dart';
+
+import '../../widget/home/customMaterialButton.dart';
 
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});

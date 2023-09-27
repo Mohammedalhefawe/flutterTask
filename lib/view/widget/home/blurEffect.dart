@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../core/constant/imgaeasset.dart';
-import '../customMaterialButton.dart';
+import 'customMaterialButton.dart';
 
 class BlurEffect extends StatelessWidget {
   final void Function()? onPressed;

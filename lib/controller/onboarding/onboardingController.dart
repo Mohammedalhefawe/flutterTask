@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:taskflutter/view/screen/auth/loginScreen.dart';
 
 class OnboardingController extends GetxController {
   PageController pageController = PageController();
@@ -25,13 +26,14 @@ class OnboardingController extends GetxController {
       print(index);
     } else {
       //go to home page
+      Get.offAll(() => const LoginScreen());
     }
   }
 
   toback() {
     if (index > 0) {
       index--;
-        pageController.animateToPage(index,
+      pageController.animateToPage(index,
           duration: const Duration(microseconds: 3500),
           curve: Curves.fastLinearToSlowEaseIn);
       update();

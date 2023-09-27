@@ -3,11 +3,11 @@ import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
 import 'package:taskflutter/controller/home/informationVehicleController.dart';
 import 'package:taskflutter/linkapi.dart';
-import 'package:taskflutter/view/widget/customButtonToBack.dart';
 import 'package:taskflutter/view/widget/home/customTextFieldOnlyRead.dart';
 import '../../../core/constant/imgaeasset.dart';
 import '../../../data/model/myVehiclesModel.dart';
-import '../../widget/customMaterialButton.dart';
+import '../../widget/auth/customButtonToBack.dart';
+import '../../widget/home/customMaterialButton.dart';
 
 class InformationVehicleScreen extends StatelessWidget {
   const InformationVehicleScreen({super.key});

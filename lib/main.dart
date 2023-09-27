@@ -7,6 +7,7 @@ import 'package:taskflutter/view/screen/auth/loginScreen.dart';
 import 'package:taskflutter/view/screen/auth/signupScreen.dart';
 import 'package:taskflutter/view/screen/home/informationVehicleScreen%20.dart';
 import 'package:taskflutter/view/screen/home/myVehiclesScreen.dart';
+import 'package:taskflutter/view/screen/splash/splash.dart';
 import 'bindings/intialbindings.dart';
 import 'core/localization/changelocal.dart';
 import 'core/localization/translation.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         translations: MyTranslation(),
         debugShowCheckedModeBanner: false,
         theme: controller.appTheme,
-        home: const LoginScreen(),
+        home: const Splash(),
         locale: const Locale('ar'),
         initialBinding: InitialBindings(),
         getPages: routes,

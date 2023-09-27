@@ -4,14 +4,14 @@ import 'package:sizer/sizer.dart';
 import 'package:taskflutter/core/class/handlingdataview.dart';
 import 'package:taskflutter/core/functions/validinput.dart';
 import 'package:taskflutter/view/screen/home/myVehiclesScreen.dart';
-import 'package:taskflutter/view/widget/customButtonToBack.dart';
 import '../../../controller/home/addVehicleController.dart';
 import '../../../core/constant/imgaeasset.dart';
 import '../../widget/auth/addImageWidget.dart';
+import '../../widget/auth/customButtonToBack.dart';
 import '../../widget/auth/customTextField.dart';
-import '../../widget/customDropDownButton.dart';
-import '../../widget/customMaterialButton.dart';
 import '../../widget/home/blurEffect.dart';
+import '../../widget/home/customDropDownButton.dart';
+import '../../widget/home/customMaterialButton.dart';
 
 class AddVehicleScreen extends StatelessWidget {
   const AddVehicleScreen({super.key});
@@ -206,8 +206,7 @@ class AddVehicleScreen extends StatelessWidget {
           if (controller.isLoad == true) {
             return BlurEffect(
               onPressed: () {
-                controller.isLoad = false;
-                controller.update();
+                Get.offAll(() => const MyVehiclesScreen());
               },
             );
           } else {

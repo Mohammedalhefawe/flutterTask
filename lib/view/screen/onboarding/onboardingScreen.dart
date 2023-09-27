@@ -4,8 +4,8 @@ import 'package:sizer/sizer.dart';
 import 'package:taskflutter/controller/onboarding/onboardingController.dart';
 import 'package:taskflutter/core/constant/color.dart';
 import '../../../data/datasource/static/static.dart';
-import '../../widget/circularIndicator.dart';
-import '../../widget/customButtonToBack.dart';
+import '../../widget/auth/circularIndicator.dart';
+import '../../widget/auth/customButtonToBack.dart';
 
 class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
@@ -80,16 +80,21 @@ class OnboardingScreen extends StatelessWidget {
                               controller.toNext();
                             },
                           )
-                        : CircleAvatar(
-                            radius: 35.0,
-                            backgroundColor: AppColor.primaryColor,
-                            child: Text(
-                              'يلا نبلش',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                  fontSize: 15.sp,
-                                  fontFamily: 'Tajawal'),
+                        : InkWell(
+                            onTap: () {
+                              controller.toNext();
+                            },
+                            child: CircleAvatar(
+                              radius: 35.0,
+                              backgroundColor: AppColor.primaryColor,
+                              child: Text(
+                                'يلا نبلش',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                    fontSize: 15.sp,
+                                    fontFamily: 'Tajawal'),
+                              ),
                             ),
                           ),
                   )

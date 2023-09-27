@@ -5,10 +5,10 @@ import 'package:taskflutter/core/class/handlingdataview.dart';
 import 'package:taskflutter/data/model/myVehiclesModel.dart';
 import 'package:taskflutter/linkapi.dart';
 import 'package:taskflutter/view/screen/home/informationVehicleScreen%20.dart';
-import 'package:taskflutter/view/widget/customButtonToBack.dart';
 import '../../../controller/home/myVehiclesController.dart';
-import '../../widget/customMaterialButton.dart';
+import '../../widget/auth/customButtonToBack.dart';
 import '../../widget/home/cardForVehicle.dart';
+import '../../widget/home/customMaterialButton.dart';
 import 'addVehicleScreen.dart';
 
 class MyVehiclesScreen extends StatelessWidget {

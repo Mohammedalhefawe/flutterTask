@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../core/constant/color.dart';
+import '../../../core/constant/color.dart';
+
 
 class RowForTowTextAndOnTap extends StatelessWidget {
   final void Function()? onTap;
